@@ -14,3 +14,23 @@ function calculateAverage(array) {
 }
 
 calculateAverage([1, 2, 3, 4, 5]);
+
+// Zadanie 2: Filtracja liczb parzystych
+
+// Zadeklaruj funkcję o nazwie "filterEvenNumbers", która przyjmuje tablicę liczb jako argument i
+// zwraca nową tablicę zawierającą tylko liczby parzyste.
+//  Wykorzystaj pętlę for do iteracji po elementach tablicy oraz instrukcje warunkowe do sprawdzenia, czy liczba jest parzysta.
+
+// Przykład użycia: filterEvenNumbers([1, 2, 3, 4, 5, 6]); // zwraca [2, 4, 6]
+
+function filterEvenNumbers(array) {
+  let array2 = [];
+  for (i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+      array2.push(array[i]);
+    }
+  }
+  return array2;
+}
+
+filterEvenNumbers([1, 2, 3, 4, 5, 6]);
