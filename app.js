@@ -34,3 +34,24 @@ function filterEvenNumbers(array) {
 }
 
 filterEvenNumbers([1, 2, 3, 4, 5, 6]);
+
+// Zadanie 3: Liczba wystąpień elementu w tablicy
+
+// Stwórz funkcję "countOccurrences" za pomocą przypisania funkcji anonimowej do zmiennej,
+// która przyjmuje dwa argumenty: tablicę "array" oraz wartość "element". Funkcja powinna zwracać liczbę wystąpień "element" w tablicy "array".
+// Wykorzystaj pętlę for do iteracji po elementach tablicy oraz instrukcje warunkowe do sprawdzenia,
+// czy element tablicy zgadza się z podaną wartością.
+
+// Przykład użycia: countOccurrences(["apple", "banana", "apple", "orange", "banana"], "banana"); // zwraca 2
+
+const countOccurrences = (array, element) => {
+  let count = 0;
+  for (i = 0; i < array.length; i++) {
+    if (array[i] === element) {
+      count++;
+    }
+  }
+  return count;
+};
+
+countOccurrences(["apple", "banana", "apple", "orange", "banana"], "banana");
