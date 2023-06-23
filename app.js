@@ -79,9 +79,9 @@ func("1", 2222, "heeeyyooo");
 
 const addAllWords = function (...words) {
   let txt = "";
-  for (i = 0; i < words.length; i++) {
-    txt += words[i];
-  }
+  //   for (i = 0; i < words.length; i++) {
+  //     txt += words[i];
+  words.forEach((word) => (txt += word));
   console.log(txt);
 };
 
