@@ -55,3 +55,14 @@ const countOccurrences = (array, element) => {
 };
 
 countOccurrences(["apple", "banana", "apple", "orange", "banana"], "banana");
+
+//ex 4
+
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let count = 0;
+
+for (i = 0; i < array.length; i++) {
+  count += array[i];
+}
+
+console.log(count);
