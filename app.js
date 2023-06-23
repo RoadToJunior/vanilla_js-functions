@@ -74,3 +74,15 @@ const func = function (...args) {
 };
 
 func("1", 2222, "heeeyyooo");
+
+//ex 6
+
+const addAllWords = function (...words) {
+  let txt = "";
+  for (i = 0; i < words.length; i++) {
+    txt += words[i];
+  }
+  console.log(txt);
+};
+
+addAllWords("ja", "ty", 2, "Gdańsk");
