@@ -86,3 +86,16 @@ const addAllWords = function (...words) {
 };
 
 addAllWords("ja", "ty", 2, "Gdańsk");
+
+//ex 7
+
+function showUsers(owner, ...others) {
+  console.log(
+    `Na imprezie był ${owner} ${
+      others.length ? `oraz ${others}` : "i tylko on"
+    }`
+  );
+}
+
+showUsers("Marcin", "adam", "ewa", "kuba", "jacek");
+showUsers("Marcin");
