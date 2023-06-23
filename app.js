@@ -66,3 +66,11 @@ for (i = 0; i < array.length; i++) {
 }
 
 console.log(count);
+
+//ex 5
+
+const func = function (...args) {
+  console.log(...args);
+};
+
+func("1", 2222, "heeeyyooo");
