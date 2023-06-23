@@ -81,7 +81,13 @@ const addAllWords = function (...words) {
   let txt = "";
   //   for (i = 0; i < words.length; i++) {
   //     txt += words[i];
-  words.forEach((word) => (txt += word));
+  words.forEach((word, index) => {
+    if (index === words.length - 1) {
+      txt += word;
+    } else {
+      txt += `${word}-`;
+    }
+  });
   console.log(txt);
 };
 
