@@ -105,3 +105,11 @@ function showUsers(owner, ...others) {
 
 showUsers("Marcin", "adam", "ewa", "kuba", "jacek");
 showUsers("Marcin");
+
+const colors = ["white", "black", "yellow", "green", "red", "purple", "blue"];
+
+for (color of colors) {
+  if (color === "red") {
+    console.log(color);
+  }
+}
